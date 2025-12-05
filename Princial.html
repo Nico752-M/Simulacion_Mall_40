@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mall de la 40 de Tuluá - Valle</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+    <!-- Header y navegación -->
+    <header>
+        <div class="container header-container">
+            <a href="Principal.html" class="logo">
+                <i class="fas fa-utensils"></i>
+                Mall de la 40
+            </a>
+            
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#restaurantes">Restaurantes</a></li>
+                    <li><a href="#porque-elegirnos">¿Por qué elegirnos?</a></li>
+                    <li><a href="#galeria">Galería</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+                
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Sección de bienvenida -->
+    <section id="inicio" class="hero">
+        <div class="container">
+            <h1 class="hero-title">Bienvenidos al Mall de la 40</h1>
+            <p class="hero-subtitle">El destino gastronómico más vibrante del Valle del Cauca</p>
+            <p class="hero-description">Todo el sabor en un solo lugar. Variedad gastronómica, buen ambiente y momentos para compartir.</p>
+            <a href="#restaurantes" class="btn-primary">Ver restaurantes</a>
+        </div>
+    </section>
+
+    <!-- Sección de restaurantes -->
+    <section id="restaurantes" class="restaurants-section">
+        <div class="container">
+            <h2 class="section-title">Nuestros Restaurantes</h2>
+            <p class="section-subtitle">Haz clic en cualquier restaurante para ver más información</p>
+            
+            <div class="restaurants-grid">
+                <!-- Restaurante 1: El Rey del Chicharrón -->
+                 <a href="restaurantes/burguer-palace.html" class="restaurant-card-link">
+                     <div class="restaurant-card">
+                         <div class="restaurant-logo-container small">
+                            <img src="imagenes/Burguer_Palace.png" alt="Burguer Palace">
+                        </div>
+                        <h3 class="restaurant-name">Burguer Palace</h3>
+                    </div>
+                </a>
+                
+                <!-- Restaurante 2: Burguer Palace -->
+                <a href="restaurantes/el-rey-del-chicharron.html" class="restaurant-card-link">
+                    <div class="restaurant-card">
+                        <div class="restaurant-logo-container small">
+                            <img src="imagenes/Rey_Chicharron.png" alt="El Rey del Chicharrón">
+                        </div>
+                        <h3 class="restaurant-name">El Rey del Chicharrón</h3>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección ¿Por qué elegirnos? -->
+    <section id="porque-elegirnos" class="why-section">
+        <div class="container">
+            <h2 class="section-title">¿Por qué elegir al Mall de la 40?</h2>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-utensils"></i>
+                    </div>
+                    <h3>Variedad Gastronómica</h3>
+                    <p>Ofrecemos una amplia selección de restaurantes con diferentes especialidades para todos los gustos.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Para Todos</h3>
+                    <p>Ideal para familias, amigos, parejas y grupos. Un plan para cada ocasión.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-palette"></i>
+                    </div>
+                    <h3>Ambiente Único</h3>
+                    <p>Diseño moderno con vibra juvenil. El lugar perfecto para crear recuerdos.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3>Horarios Flexibles</h3>
+                    <p>Abierto desde las 4pm hasta la medianoche. La mejor opción nocturna.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Galería -->
+    <section id="galeria" class="gallery-section">
+        <div class="container">
+            <h2 class="section-title">Nuestro Espacio</h2>
+            <p class="section-subtitle">Conoce nuestras instalaciones y ambiente</p>
+            
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Ambiente nocturno">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1559925393-8be0ec4767c8?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Terraza exterior">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Platos especiales">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Bar y coctelería">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1514933651103-005eec06c04b?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Eventos especiales">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1590846406792-0adc7f938f1d?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Música en vivo">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Contacto -->
+    <section id="contacto" class="contact-section">
+        <div class="container">
+            <h2 class="section-title">Contáctanos</h2>
+            
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Ubicación</h3>
+                            <p>Carrera 40 #29-57, Tuluá, Valle del Cauca</p>
+                            <a href="https://maps.app.goo.gl/vjD1hBiuHLge5gLz7" target="_blank" class="contact-link">Ver en Google Maps</a>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Teléfono</h3>
+                            <p>+57 (602) 224 4040</p>
+                            <p>Lunes a Domingo: 4:00 PM - 12:00 AM</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fab fa-instagram"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Instagram</h3>
+                            <p>@elmalldela_40</p>
+                            <a href="https://www.instagram.com/elmalldela_40/" target="_blank" class="contact-link">Síguenos en Instagram</a>
+                        </div>
+                    </div>
+                </div>
+                
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <a href="Principal.html" class="logo">
+                        <i class="fas fa-utensils"></i>
+                        Mall de la 40
+                    </a>
+                    <p>El mejor destino gastronómico de Tuluá</p>
+                </div>
+                
+                <div class="footer-social">
+                    <h3>Síguenos</h3>
+                    <div class="social-icons">
+                        <a href="https://www.instagram.com/elmalldela_40/" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://facebook.com/malldela40" target="_blank"><i class="fab fa-facebook"></i></a>
+                        <a href="https://wa.me/573002244040" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-hours">
+                    <h3>Horarios</h3>
+                    <p>Lunes a Domingo: 4:00 PM - 12:00 AM</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Mall de la 40. Todos los derechos reservados.</p>
+                <p>Tuluá, Valle del Cauca, Colombia</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+</body>
+</html>

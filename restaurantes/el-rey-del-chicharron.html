@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Rey del Chicharrón - Mall de la 40</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/animations.css">
+    <style>
+        .restaurant-page {
+            padding-top: 100px;
+            min-height: 100vh;
+        }
+        
+        .restaurant-header {
+            text-align: center;
+            padding: 60px 0 40px;
+            background: linear-gradient(rgba(10, 10, 26, 0.95), rgba(17, 17, 42, 0.95));
+            border-bottom: 3px solid var(--neon-blue);
+        }
+        
+        /* CONTENEDOR para página de restaurante individual */
+        .restaurant-logo-large {
+            display: inline-block;
+            margin: 0 auto 25px;
+            border-radius: 50%;
+            overflow: hidden;
+            border: 4px solid var(--neon-blue);
+            box-shadow: 0 0 25px var(--neon-blue);
+            background-color: white;
+            line-height: 0;
+        }
+        
+        /* La imagen mantiene su tamaño original */
+        .restaurant-logo-large img {
+            display: block;
+            max-width: 200px;
+            max-height: 200px;
+            width: auto;
+            height: auto;
+            border-radius: 50%;
+        }
+        
+        .restaurant-content {
+            padding: 40px 0;
+        }
+        
+        .restaurant-info {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            margin: 40px 0;
+        }
+        
+        .restaurant-details {
+            background-color: rgba(255, 255, 255, 0.05);
+            padding: 30px;
+            border-radius: 15px;
+            border: 1px solid rgba(0, 110, 255, 0.2);
+        }
+        
+        .restaurant-details h2 {
+            color: var(--neon-blue);
+            margin-bottom: 20px;
+            font-size: 1.8rem;
+        }
+        
+        .restaurant-details h3 {
+            color: var(--neon-blue-light);
+            margin: 25px 0 15px;
+            font-size: 1.3rem;
+        }
+        
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            padding: 15px;
+            background-color: rgba(0, 110, 255, 0.1);
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+        
+        .contact-icon {
+            color: var(--neon-blue);
+            font-size: 1.5rem;
+            width: 50px;
+            text-align: center;
+        }
+        
+        @media (max-width: 768px) {
+            .restaurant-info {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+            
+            .restaurant-details {
+                padding: 20px;
+            }
+            
+            .restaurant-logo-large img {
+                max-width: 180px;
+                max-height: 180px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header (DEBES AGREGARLO) -->
+    <header>
+        <div class="container header-container">
+            <a href="../Principal.html" class="logo">
+                <i class="fas fa-utensils"></i>
+                Mall de la 40
+            </a>
+        </div>
+    </header>
+
+    <!-- Página del restaurante -->
+    <div class="restaurant-page">
+        <div class="restaurant-header">
+            <div class="container">
+                <!-- LOGO CORREGIDO -->
+                <div class="restaurant-logo-large">
+                    <img src="../imagenes/Rey_Chicharron.png" alt="El Rey del Chicharrón">
+                </div>
+                <h1>El Rey del Chicharrón</h1> <!-- FALTABA ESTE TÍTULO -->
+                <p class="section-subtitle">La auténtica tradición valluna</p>
+            </div>
+        </div>
+        
+        <div class="container restaurant-content">
+            <div class="restaurant-info">
+                <div class="restaurant-details">
+                    <h2>Información</h2>
+                    <p>Especialistas en chicharrón tradicional valluno con más de 20 años de experiencia.</p>
+                    
+                    <h3>Especialidades</h3>
+                    <p>• Chicharrón Tradicional</p>
+                    <p>• Bandeja Valluna Completa</p>
+                    <p>• Chicharrón en Salsa Especial</p>
+                    <p>• Mojarra Frita con Chicharrón</p>
+                    
+                    <h3>Horarios</h3>
+                    <p><strong>Lunes a Jueves:</strong> 11:00 AM - 10:00 PM</p>
+                    <p><strong>Viernes a Domingo:</strong> 10:00 AM - 11:00 PM</p>
+                </div>
+                
+                <div class="restaurant-details">
+                    <h2>Contacto</h2>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div>
+                            <h4>Teléfono</h4>
+                            <p>+57 312 555 1234</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fab fa-instagram"></i>
+                        </div>
+                        <div>
+                            <h4>Instagram</h4>
+                            <p>@elreydelchicharron_tulua</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div>
+                            <h4>Ubicación</h4>
+                            <p>Local #3, Mall de la 40</p>
+                        </div>
+                    </div>
+                    
+                    <a href="https://wa.me/573125551234" target="_blank" class="btn-primary" style="margin-top: 20px; display: inline-block;">
+                        <i class="fab fa-whatsapp"></i> Pedir por WhatsApp
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <a href="../Principal.html" class="logo">
+                        <i class="fas fa-utensils"></i>
+                        Mall de la 40
+                    </a>
+                    <p>El mejor destino gastronómico de Tuluá</p>
+                </div>
+                
+                <div class="footer-social">
+                    <h3>Síguenos</h3>
+                    <div class="social-icons">
+                        <a href="https://instagram.com/malldela40_tulua" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://facebook.com/malldela40" target="_blank"><i class="fab fa-facebook"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-hours">
+                    <h3>Horarios Mall</h3>
+                    <p>4:00 PM - 12:00 AM</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Mall de la 40. Tuluá, Valle del Cauca</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Script para el menú hamburguesa
+        document.addEventListener('DOMContentLoaded', function() {
+            const hamburger = document.getElementById('hamburger');
+            const navMenu = document.querySelector('.nav-menu');
+            
+            if (hamburger) {
+                hamburger.addEventListener('click', () => {
+                    hamburger.classList.toggle('active');
+                    navMenu.classList.toggle('active');
+                });
+            }
+            
+            // Cerrar menú al hacer clic en un enlace
+            document.querySelectorAll('.nav-menu a').forEach(link => {
+                link.addEventListener('click', () => {
+                    if (hamburger) hamburger.classList.remove('active');
+                    if (navMenu) navMenu.classList.remove('active');
+                });
+            });
+        });
+    </script>
+</body>
+</html>

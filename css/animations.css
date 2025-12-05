@@ -1,0 +1,85 @@
+/* animations.css */
+@keyframes pulse {
+    0% { 
+        text-shadow: 0 0 10px var(--neon-blue); 
+    }
+    100% { 
+        text-shadow: 0 0 20px var(--neon-blue), 0 0 30px var(--neon-blue-dark); 
+    }
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+@keyframes slide-in-left {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slide-in-right {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fade-in-up {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Aplicar animaciones */
+.hero-title {
+    animation: pulse 2s infinite alternate;
+}
+
+.restaurant-card:hover .restaurant-logo {
+    animation: float 2s infinite ease-in-out;
+}
+
+.feature-card:hover .feature-icon {
+    animation: float 2s infinite ease-in-out;
+}
+
+.gallery-item {
+    animation: fade-in-up 0.8s ease-out;
+}
+
+.contact-item {
+    animation: slide-in-left 0.8s ease-out;
+}
+
+.map-container {
+    animation: slide-in-right 0.8s ease-out;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+header.scrolled {
+    padding: 10px 0;
+    background-color: rgba(10, 10, 26, 0.98);
+}
